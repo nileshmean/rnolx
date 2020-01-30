@@ -15,6 +15,9 @@ import SearchScreen from '../screens/Search/SearchScreen';
  import PostFormScreen3 from '../screens/PostForm/PostFormScreen3';
  import PostFormScreen4 from '../screens/PostForm/PostFormScreen4';
  import PostFormScreen5 from '../screens/PostForm/PostFormScreen5';
+ import PostFormScreen6 from '../screens/PostForm/PostFormScreen6';
+ import PostFormScreen7 from '../screens/PostForm/PostFormScreen7';
+ import PostFormScreen8 from '../screens/PostForm/PostFormScreen8';
 // import RecipeScreen from '../screens/Recipe/RecipeScreen';
 // import RecipesListScreen from '../screens/RecipesList/RecipesListScreen';
  import DrawerContainer from '../screens/DrawerContainer/DrawerContainer';
@@ -62,15 +65,17 @@ const PostNavigator = createStackNavigator(
     PostFormScreen3:PostFormScreen3,
     PostFormScreen4:PostFormScreen4,
     Search:SearchScreen,
-    PostFormScreen5:PostFormScreen5
-
+    PostFormScreen5:PostFormScreen5,
+    PostFormScreen6:PostFormScreen6,
+    PostFormScreen7:PostFormScreen7,
+    PostFormScreen8:PostFormScreen8,
   },
 
 );
 
 
 const TabNavigator = createBottomTabNavigator({
-  Home: MainNavigator,
+  Home: PostFormScreen8,
   Post: PostFormScreen4,
   Post: PostNavigator,
   //Recipe: RecipeScreen

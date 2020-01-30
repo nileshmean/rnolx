@@ -209,7 +209,7 @@ export default class PostFormScreen3 extends React.Component {
 
 registerCall(){
   
-  this.props.navigation.navigate('PostFormScreen6');
+  this.props.navigation.navigate('PostFormScreen4');
   
 
   
@@ -279,9 +279,9 @@ toggleEmailSwitch = (value) => {
        <View style={styles.formContaitnerScroll}>
        <View style={styles.fieldContaitner}>
 
-        <Text style={styles.fieldText}>First Name *</Text>
+        <Text style={styles.fieldText}>Price *</Text>
               <Input
-          placeholder='First Name'
+          placeholder='Price'
           onChangeText={(PosterFN) => this.setState({PosterFN})}
           errorStyle={{ color: 'red' }}
           errorMessage={this.state.errMsgPosterFN ? 'Please enter First Name': null}
@@ -289,76 +289,7 @@ toggleEmailSwitch = (value) => {
         
         </View> 
         
-        <View style={styles.fieldContaitner}>
-
-              <Text style={styles.fieldText}>Last Name *</Text>
-              <Input
-              placeholder='Last Name'
-              onChangeText={(PosterLN) => this.setState({PosterLN})}
-              errorStyle={{ color: 'red' }}
-              errorMessage={this.state.errMsgPosterLN ? 'Please enter Last Name': null}
-              />
-
-        </View> 
-
-        <View style={styles.fieldContaitner}>
-
-              <Text style={styles.fieldText}>Email Address *</Text>
-              <Input
-              placeholder='Email Address'
-              onChangeText={(PosterEmail) => this.setState({PosterEmail})}
-              errorStyle={{ color: 'red' }}
-              errorMessage={this.state.errMsgPosterEmail ? 'Please enter Email Address': null}
-              />
-
-      </View>        
-
-                  <View style={styles.fieldContaitner}>
-
-            <Text style={styles.fieldText}>Phone Number *</Text>
-            <Input
-            placeholder='Phone Number'
-            onChangeText={(PosterPhone) => this.setState({PosterPhone})}
-            errorStyle={{ color: 'red' }}
-            errorMessage={this.state.errMsgPosterPhone ? 'Please enter Phone Number': null}
-            />
-
-
-            </View> 
-
-            <View style={styles.fieldContaitner}>
-
-<Text style={styles.fieldText}>Password *</Text>
-<Input
-placeholder='Password'
-onChangeText={(PosterPassword) => this.setState({PosterPassword})}
-errorStyle={{ color: 'red' }}
-errorMessage={this.state.errMsgPosterPassword ? 'Please enter Password': null}
-/>
-
-
-</View> 
-
-
-
-    <View style={styles.fieldContaitnerSwitch}>
-
-                <Text style={styles.SwitchText}>Show my phone number on my ads *</Text>
-                <Switch style={styles.SwitchButton}   onValueChange = {this.togglePhoneSwitch}  value = {this.state.ShowPhoneState}/>
-
-    </View>      
-
- 
-
-      <View style={styles.fieldContaitnerSwitch}>
-
-                <Text style={styles.SwitchText}>Show my email address on my ads *</Text>
-
-
-                <Switch  style={styles.SwitchButton}   onValueChange = {this.toggleEmailSwitch}  value = {this.state.ShowEmailState}/>
-
-      </View>     
-        
+   
 
 </View>
 
